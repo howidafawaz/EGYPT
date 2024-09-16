@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- css_style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font_awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <header class="100-vh ">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar fw-bold" style="background-color: #86A789;" id="navbar">
+            <div class="container">
+
+                <img src="imges/logo.jpg" alt="logo-image" class="rounded-circle logo-image mx-3 my-2 shadow">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"></li>
+                        <a class="nav-link egypt" href="#">EGYPT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#trips" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Trips
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#trips">CAIRO</a></li>
+                                <li><a class="dropdown-item" href="#trips">ALEX</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#trips">LUXOR</a></li>
+                                <li><a class="dropdown-item" href="#trips">ASWAN</a></li>
+                                <li><a class="dropdown-item" href="#trips">SHARM ELSHAIKH</a></li>
+                                <li><a class="dropdown-item" href="#trips">MORE..</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popular">Popular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Podcasts">Podcasts</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success mx-2" type="submit">Search</button>
+                        <button class="btn btn-outline-success mx-2" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header-carosel -->
+        <div id="carouselExampleCaptions" class="carousel slide w-75 m-auto" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="imges/slide1.jpg" class="d-block mx-auto w-100" alt="egypt-places-for-trip">
+                    <div class="carousel-caption d-none d-md-block py-4 px-2">
+                        <h5>Siwa Oasis at Libyan Border</h5>
+                        <p>Located in the western part of Egypt, one of the most serene places to visit in Egypt.</p>
+                        <button type="button" class="btn btn-success">Book Now!</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imges/slide2.jpg" class="d-block mx-auto w-100" alt="egypt-places-for-trip">
+                    <div class="carousel-caption d-none d-md-block py-4 px-2">
+                        <h5>Gezira Island</h5>
+                        <p>Lying towards the western side of downtown Cairo and floating on the blue Nile river.</p>
+                        <button type="button" class="btn btn-success">Book Now!</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imges/slide3.jpg" class="d-block mx-auto w-100" alt="egypt-places-for-trip">
+                    <div class="carousel-caption d-none d-md-block py-4 px-2">
+                        <h5>Alexandria National Museum</h5>
+                        <p>Alexandria National Museum offers an insight of the rich heritage and glorious past of the
+                            Egyptian city of Alexandria.</p>
+                        <button type="button" class="btn btn-success">Book Now!</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imges/slide4.jpg" class="d-block mx-auto w-100" alt="egypt-places-for-trip">
+                    <div class="carousel-caption d-none d-md-block py-4 px-2">
+                        <h5>Mit Ghamr Dovecotes</h5>
+                        <p>Around hundreds of Dovecotes are situated in the delta Nile at Mit Ghamr which’s a very
+                            unique architectural design only seen in Egypt.</p>
+                        <button type="button" class="btn btn-success">Book Now!</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+    <div class="social d-flex flex-column">
+        <a href="#"><i class="fa-brands fa-square-facebook fs-1 mx-4 my-2"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp fs-1 mx-4 my-2"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter fs-1 mx-4 my-2"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fs-1 mx-4 my-2"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram fs-1 mx-4 my-2"></i></a>
+    </div>
+
+    <div class="welcome p-4 mt-5">
+        <div class="container">
+            <h2>Welcome</h2>
+            <p>We are so happy you chose us for your stay. We can't wait to make your adventure unforgettable!We are
+                ready
+                to make your stay the best one ever! Welcome and enjoy your time with us.</p>
+            <button type="button" class="btn btn-success">Learn More</button>
+
+        </div>
+    </div>
+    <hr class="my-4" />
+    <div class="popular p-5 d-flex align-items-center justify-content-center">
+        <h3>Popular Destination In Egypt</h3>
+    </div>
+
+    <!-- accordion -->
+    <div class="container my-4" id="services">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold giza-city" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Giza City
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Giza</strong> is a Governorate to the west of the Egyptian capital Cairo - a city in its
+                        own right, but for a long time now
+                        absorbed as part of the heavily-populated and sprawling Cairo metropolis. Giza is best known as
+                        that part of Cairo closest to the world-famous Pyramids of Giza, situated high on the desert
+                        plateau immediately to the west of the urban district, itself located in the valley and centred
+                        around the Pyramids Road.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed giza-city fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Luxor City
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Luxor</strong> But you need the luxury of
+                        plenty of time for this one, which, alas, we didn’t have…
+                        Luxor (formerly – Thebes), for a long time the capital of Ancient Egypt, has one really rich
+                        history – and a very long one: it’s nearly 5000 years old! All the same, a lot of it remains to
+                        this day – along both banks of the River Nile – albeit in ruins. Statues, columns, temples (and
+                        surely tombs?:)
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed giza-city fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Sinai Peninsula
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This unique geographical position has
+                        contributed to its historical significance, as well as its remarkable landscapes. The peninsula
+                        is renowned for its awe-inspiring natural beauty, which includes majestic mountain ranges, vast
+                        deserts, and stunning coastal areas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- translation -->
+    <div class="popular p-3 d-flex align-items-center justify-content-center">
+        <h3>Translate From Arabic To English</h3>
+    </div>
+    <div class="to-english p-3">
+        <div class="container">
+            <p class="lead fw-bold">Write and Translate <span class="press-here">Press Here</span></p>
+            <button class="btn btn-outline-success mx-2" type="submit" onclick="newFun()">copy</button>
+            <textarea rows="8" class="form-control my-4" placeholder="Translate" name="" id=""></textarea>
+
+        </div>
+    </div>
+
+
+    <div class="popular p-3 d-flex align-items-center justify-content-center">
+        <h3>Translate From Arabic To French</h3>
+    </div>
+    <div class="to-english p-3">
+        <div class="container">
+            <p class="lead fw-bold">Write and Translate <span class="press-here">Press Here</span></p>
+            <button class="btn btn-outline-success mx-2" type="submit" onclick="newFun()">copy</button>
+            <textarea rows="8" class="form-control my-4" placeholder="Translate" name="" id=""></textarea>
+
+        </div>
+    </div>
+
+
+    <div class="popular p-3 d-flex align-items-center justify-content-center">
+        <h3>Translate From Arabic To German</h3>
+    </div>
+    <div class="to-english p-3">
+        <div class="container">
+            <p class="lead fw-bold">Write and Translate <span class="press-here">Press Here</span></p>
+            <button class="btn btn-outline-success mx-2" type="submit" onclick="newFun()">copy</button>
+            <textarea rows="8" class="form-control me-0 mt-4" placeholder="Translate" name="" id=""></textarea>
+        </div>
+    </div>
+    <hr class="my-4" />
+    <div class="gap-section w-100">
+    </div>
+    <hr class="my-4" />
+
+    <!-- cards-section -->
+    <div class="popular p-3 d-flex align-items-center justify-content-center">
+        <h3>POPULAR DESTINATIONS IN EGYPT</h3>
+    </div>
+    <div class="cards py-5" id="trips">
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item2.jpg" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">CAIRO</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">Capital Of Egypt</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item3.jpg" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">ALEXANDRIA</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">The bride of mediterranean</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item4.jpg" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">LUXOR</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">The capital of ancient kingdom</p>
+                    </div>
+                </div>
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item5.jpg" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">ASWAN</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">Nubian city in the south of Egypt</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item6.png" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">NEW CAPITAL</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">The new administrative capital</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item7.jpg" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">SHARM EL SHEIKH</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">beautiful city in Egypt</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item8.jpg" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">SHARM EL SHEIKH</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">beautiful city in Egypt</p>
+                    </div>
+                </div>
+                <div class="col-md-4 card-item p-2">
+                    <div class="inner p-3 shadow rounded">
+                        <img class="w-100" src="imges/item9.jpg" alt="egypt">
+                        <div class="d-flex justify-content-between mt-3">
+                            <h4 class="">SHARM EL SHEIKH</h4>
+                            <button class="btn btn-outline-success mx-2" type="submit">Read More</button>
+                        </div>
+                        <p class="">beautiful city in Egypt</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="gap-section-two w-100">
+    </div>
+    <hr class="my-4" />
+
+    <div class="popular p-3 d-flex align-items-center justify-content-center">
+        <h3>THANKS FOR</h3>
+    </div>
+    <div class="thanks" id="popular">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="inner my-3">
+                        <img src="imges/ahmed_zewail.jpg" class="w-100" alt="nagib mahfouz">
+                        <div class="layer p-3 d-flex flex-column justify-content-between">
+                            <div class="content-top">
+                                <p class="fw-bold">Chemist, father of femtochemistry</p>
+                                <i class="fa-regular fa-clock me-1"></i>
+                                <span>
+                                    (February 26, 1946 – August 2, 2016)
+                                </span>
+                            </div>
+                            <div class="content-bottom">
+                                <img class="w-25 rounded-circle my-3" src="imges/ahmed_zewail2.jpg" alt="nagib mahfouz">
+                                <p class="fw-bold">Ahmed Zewail</p>
+                                <span class="fw-bold">Awarded Nobel Prize in Chemistry</span>
+                                <a href="https://en.wikipedia.org/wiki/Ahmed_Zewail"><button
+                                        class="btn btn-outline-success w-100 mx-auto text-center my-3"
+                                        type="submit">Read More..</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="inner my-3">
+                        <img src="imges/ga-ab.jpg" class="w-100" alt="nagib mahfouz">
+                        <div class="layer p-3 d-flex flex-column justify-content-between">
+                            <div class="content-top">
+                                <p class="fw-bold">Egyptian military officer and politician</p>
+                                <i class="fa-regular fa-clock me-1"></i>
+                                <span>
+                                    (Jan 15, 1918 – September 28, 1970)
+                                </span>
+                            </div>
+                            <div class="content-bottom">
+                                <img class="w-25 rounded-circle my-3" src="imges/ga-ab2.jpg" alt="nagib mahfouz">
+                                <p class="fw-bold">Gamal Abdel Nasser</p>
+                                <span class="fw-bold">led the Egyptian revolution of 1952.</span>
+                                <a href="https://en.wikipedia.org/wiki/Ahmed_Zewail"><button
+                                        class="btn btn-outline-success w-100 mx-auto text-center my-3"
+                                        type="submit">Read More..</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="inner my-3">
+                        <img src="imges/na-ma.jpg" class="w-100" alt="nagib mahfouz">
+                        <div class="layer p-3 d-flex flex-column justify-content-between">
+                            <div class="content-top">
+                                <p class="fw-bold">Egyptian writer</p>
+                                <i class="fa-regular fa-clock me-1"></i>
+                                <span>
+                                    (Dec 11, 1911 – Aug 30, 2006)
+                                </span>
+                            </div>
+                            <div class="content-bottom">
+                                <img class="w-25 rounded-circle my-3" src="imges/na-ma2.jpg" alt="nagib mahfouz">
+                                <p class="fw-bold">Naguib Mahfouz</p>
+                                <span class="fw-bold">one of the first writers in Arabic literature</span>
+                                <a href="https://en.wikipedia.org/wiki/Gamal_Abdel_Nasser"><button
+                                        class="btn btn-outline-success w-100 mx-auto text-center my-3"
+                                        type="submit">Read More..</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4" />
+
+    <div class="popular p-3 d-flex align-items-center justify-content-center">
+        <h3>EGYPT NEWS</h3>
+    </div>
+    <div class="poadcast-box shadow p-5 m-5 rounded" id="Podcasts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Droos Podcast</h3>
+                    <i class="fa-solid fa-calendar-days m-1"></i>
+                    <span>Education, Self-Improvement 12 Aug</span>
+                    <div class="underline-edu rounded my-2 "></div>
+                    <p class="lead my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non rerum
+                        magnam quasi. Quas pariatur, repellat velit molestias esse suscipit eum sunt dolorem nemo
+                        voluptate recusandae asperiores cumque alias repellendus ab sequi similique amet vero?</p>
+                    <div class="controls d-flex">
+                        <div class="podcast py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-tag m-2"></i>
+                            <span>podcast</span>
+                        </div>
+                        <div class="min py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-clock m-2"></i>
+                            <span>55 mins</span>
+                        </div>
+                        <div class="play py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-play m-2"></i>
+                            <span>play episode</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="podcast-img rounded my-3">
+                        <img class="w-100" src="imges/droos.jpg" alt="ahmed abozaid">
+                        <div class="img-layer">
+                            <div class="spotify m-2">
+                                <a href="https://open.spotify.com/show/6yKVEvDtHYivaGXRegjlI8"> <i
+                                        class="fa-brands fa-spotify m-2"></i>
+                                    <span>spotify</span></a>
+                            </div>
+                            <div class="youtube m-2">
+                                <a href="https://www.youtube.com/@DroosOnline4u"><i
+                                        class="fa-brands fa-youtube m-2"></i>
+                                    <span>youtube</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="poadcast-box shadow p-5 m-5 rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="podcast-img rounded my-3">
+                        <img class="w-100" src="imges/ahmed-amer.jpg" alt="ahmed abozaid">
+                        <div class="img-layer">
+                            <div class="spotify m-2">
+                                <a href="https://open.spotify.com/show/3PAXxlSh9GysXkz4jUkhG7"> <i
+                                        class="fa-brands fa-spotify m-2"></i>
+                                    <span>spotify</span></a>
+                            </div>
+                            <div class="youtube m-2">
+                                <a href="https://www.youtube.com/playlist?list=PLATApN30c4aLXpHzO1GkEb9H0CeXaJFy9"><i
+                                        class="fa-brands fa-youtube m-2"></i>
+                                    <span>youtube</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h3>Ahmed Amer Podcast</h3>
+                    <i class="fa-solid fa-calendar-days m-1"></i>
+                    <span>Ahmed Amer is a true modern Muslim. philosophy on gradual change, not trying to change
+                        everything at once.</span>
+                    <div class="underline-edu rounded my-2 "></div>
+                    <p class="lead my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non rerum
+                        magnam quasi. Quas pariatur, repellat velit molestias esse suscipit eum sunt dolorem nemo
+                        voluptate recusandae asperiores cumque alias repellendus ab sequi similique amet vero?</p>
+                    <div class="controls d-flex">
+                        <div class="podcast py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-tag m-2"></i>
+                            <span>podcast</span>
+                        </div>
+                        <div class="min py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-clock m-2"></i>
+                            <span>1 hour</span>
+                        </div>
+                        <div class="play py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-play m-2"></i>
+                            <span>play episode</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="poadcast-box shadow p-5 m-5 rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>ABtalks Podcast</h3>
+                    <i class="fa-solid fa-calendar-days m-1"></i>
+                    <span>It's a show that goes beyond entertainment and provides a platform for personal growth,
+                        learning, and empathy.</span>
+                    <div class="underline-edu rounded my-2 "></div>
+                    <p class="lead my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non rerum
+                        magnam quasi. Quas pariatur, repellat velit molestias esse suscipit eum sunt dolorem nemo
+                        voluptate recusandae asperiores cumque alias repellendus ab sequi similique amet vero?</p>
+                    <div class="controls d-flex">
+                        <div class="podcast py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-tag m-2"></i>
+                            <span>podcast</span>
+                        </div>
+                        <div class="min py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-clock m-2"></i>
+                            <span>2 hours</span>
+                        </div>
+                        <div class="play py-1 px-2 m-2 rounded">
+                            <i class="fa-solid fa-play m-2"></i>
+                            <span>play episode</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="podcast-img rounded my-3">
+                        <img class="w-100" src="imges/ABtalks.jpg" alt="man">
+                        <div class="img-layer">
+                            <div class="spotify m-2">
+                                <a href="https://open.spotify.com/show/0OCySY70lEMQraw6cQ6V3f"> <i
+                                        class="fa-brands fa-spotify m-2"></i>
+                                    <span>spotify</span></a>
+                            </div>
+                            <div class="youtube m-2">
+                                <a href="https://www.youtube.com/@anasbukhash"><i class="fa-brands fa-youtube m-2"></i>
+                                    <span>youtube</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="my-4" />
+    <div class="popular p-3 d-flex align-items-center justify-content-center">
+        <h3>Join Us</h3>
+    </div>
+
+    <div class="contacts m-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div
+                        class="my-3 contact-inner p-4 rounded shadow d-flex flex-column align-items-center justify-content-evenly">
+                        <span class="fs-3">Subscribe Now</span>
+                        <i class="fa-brands fa-twitter fs-1 m-3"></i>
+                        <span class="fs-3">Visit link..</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div
+                        class="my-3 contact-inner p-4 rounded shadow d-flex flex-column align-items-center justify-content-evenly">
+                        <span class="fs-3">Like Page</span>
+                        <i class="fa-brands fa-facebook-f fs-1 m-3"></i>
+                        <span class="fs-3">Visit link..</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div
+                        class="my-3 contact-inner p-4 rounded shadow d-flex flex-column align-items-center justify-content-evenly">
+                        <span class="fs-3">About Us</span>
+                        <i class="fa-brands fa-linkedin fs-1 m-3"></i>
+                        <span class="fs-3">Visit link..</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div
+                        class="my-3 contact-inner p-4 rounded shadow d-flex flex-column align-items-center justify-content-evenly">
+                        <span class="fs-3">Share Link</span>
+                        <i class="fa-solid fa-share-nodes fs-1 m-3"></i>
+                        <span class="fs-3">Share Now!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-inner text-center">
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="imges/footer1.jpg" alt="" class="w-25 rounded-circle">
+                            <span class="mx-2 fw-bold">good company</span>
+
+                        </div>
+                        <hr>
+                        <p><span class="fw-bold">tel:</span> 01000000 </p>
+                        <p><span class="fw-bold">Address:</span> Egypt </p>
+                        <p><span class="fw-bold">Email:</span> example@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-inner text-center">
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="imges/footer2.jpg" alt="" class="w-25 rounded-circle">
+                            <span class="mx-2 fw-bold">good company</span>
+
+                        </div>
+                        <hr>
+                        <p class="fw-bold">visit us</p>
+                        <p class="fw-bold">take a look</p>
+                        <p class="fw-bold">your happiness is more important</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-inner text-center">
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="imges/footer3.jpg" alt="" class="w-25 rounded-circle">
+                            <span class="mx-2 fw-bold">good company</span>
+
+                        </div>
+                        <hr>
+                        <p class="fw-bold">services for all</p>
+                        <p class="fw-bold">provide best service</p>
+                        <p class="fw-bold">you will be better than before</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="containe">
+                <p class="text-center text-dark">COPYRIGHT 2024 HOWIDAFAWAZ, GOOD COMPANY, ALL RIGHTS</p>
+            </div>
+
+            <hr class="my-4" />
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
